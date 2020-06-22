@@ -36,8 +36,8 @@ class MainActivity : AppCompatActivity() {
      * */
     @JavascriptInterface
     public fun hello(str: String) {
-        // 1. 在 activity 中定义 js 中被调用的方法
-        // 2. 给 webView 绑定 java 对象 -- 这一步需要提前绑定
+        // 1. 给 webView 绑定 java 对象 -- 这一步需要提前绑定
+        // 2. 在 activity 中定义 js 中被调用的方法
         // 3. 在 js 中调用该方法
         Toast.makeText(this, str, Toast.LENGTH_SHORT).show()
     }
